@@ -1,0 +1,1423 @@
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMyThreads (20220903041630)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "my_threads" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220903041630"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2022-09-03 04:21:10.364919"], ["updated_at", "2022-09-03 04:21:10.364919"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2022-09-03 13:26:41 +0900
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 692)
+Completed 200 OK in 13ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 6678)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-03 13:26:44 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 372)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1137)
+
+
+Started GET "/" for ::1 at 2022-09-03 13:30:52 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 578)
+Completed 200 OK in 8ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 5301)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-03 13:40:42 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 578)
+Completed 200 OK in 14ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 5303)
+
+
+Started GET "/" for ::1 at 2022-09-03 13:42:27 +0900
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/yuseiikeda/.rbenv/versions/2.7.0/lib/ruby/gems/2.7.0/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | Allocations: 372)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 1137)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:45:22 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.6ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 960)
+  Rendered layout layouts/application.html.erb (Duration: 757.3ms | Allocations: 116369)
+Completed 200 OK in 762ms (Views: 758.1ms | ActiveRecord: 0.6ms | Allocations: 117741)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-03 13:45:25 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 23.6ms | Allocations: 4589)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 25.1ms | Allocations: 4911)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 7128)
+Completed 200 OK in 51ms (Views: 30.3ms | ActiveRecord: 3.1ms | Allocations: 11417)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-03 13:45:26 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>""}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.5ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", ""], ["created_at", "2022-09-03 04:45:26.207493"], ["updated_at", "2022-09-03 04:45:26.207493"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/1
+Completed 302 Found in 12ms (ActiveRecord: 2.1ms | Allocations: 3579)
+
+
+Started GET "/my_threads/1" for ::1 at 2022-09-03 13:45:26 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"1"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1346)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3554)
+Completed 200 OK in 16ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 8092)
+
+
+Started DELETE "/my_threads/1" for ::1 at 2022-09-03 13:45:27 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"1"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 12ms (ActiveRecord: 2.2ms | Allocations: 2235)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:45:27 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 724)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2933)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 3202)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-03 13:45:27 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 3.6ms | Allocations: 782)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 879)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 3088)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 3360)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-03 13:45:29 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"sss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.0ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sss"], ["created_at", "2022-09-03 04:45:29.568916"], ["updated_at", "2022-09-03 04:45:29.568916"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/2
+Completed 302 Found in 11ms (ActiveRecord: 2.4ms | Allocations: 2030)
+
+
+Started GET "/my_threads/2" for ::1 at 2022-09-03 13:45:29 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"2"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2775)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3482)
+
+
+Started DELETE "/my_threads/2" for ::1 at 2022-09-03 13:45:32 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"2"}
+  [1m[36mMyThread Load (0.5ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 13ms (ActiveRecord: 3.2ms | Allocations: 2217)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:45:32 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 724)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2950)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 3221)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-03 13:45:32 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 3.0ms | Allocations: 778)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 875)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 3083)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 3348)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-03 13:45:36 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.0ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ssss"], ["created_at", "2022-09-03 04:45:36.350860"], ["updated_at", "2022-09-03 04:45:36.350860"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/3
+Completed 302 Found in 13ms (ActiveRecord: 3.1ms | Allocations: 2025)
+
+
+Started GET "/my_threads/3" for ::1 at 2022-09-03 13:45:36 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 571)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 2776)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 3484)
+
+
+Started GET "/my_threads/3/edit" for ::1 at 2022-09-03 13:45:37 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 3.1ms | Allocations: 873)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1185)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 3396)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.2ms | Allocations: 4162)
+
+
+Started PATCH "/my_threads/3" for ::1 at 2022-09-03 13:45:39 +0900
+Processing by MyThreadsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Update My thread", "id"=>"3"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+Redirected to http://localhost:3000/my_threads/3
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1029)
+
+
+Started GET "/my_threads/3" for ::1 at 2022-09-03 13:45:39 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2777)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 3487)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:45:44 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 859)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3068)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 3333)
+
+
+Started GET "/my_threads/3" for ::1 at 2022-09-03 13:45:46 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 542)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2742)
+Completed 200 OK in 15ms (Views: 11.9ms | ActiveRecord: 0.2ms | Allocations: 3446)
+
+
+Started DELETE "/my_threads/3" for ::1 at 2022-09-03 13:45:53 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"3"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (1.0ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 13ms (ActiveRecord: 3.0ms | Allocations: 2218)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:45:53 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2935)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 3203)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-03 13:46:07 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 6.9ms | Allocations: 784)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 881)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 3095)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 3360)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-03 13:46:14 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.8ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ssss"], ["created_at", "2022-09-03 04:46:14.123075"], ["updated_at", "2022-09-03 04:46:14.123075"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/4
+Completed 302 Found in 17ms (ActiveRecord: 2.9ms | Allocations: 2023)
+
+
+Started GET "/my_threads/4" for ::1 at 2022-09-03 13:46:14 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2775)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.2ms | Allocations: 3482)
+
+
+Started GET "/my_threads/4/edit" for ::1 at 2022-09-03 13:46:15 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 2.9ms | Allocations: 842)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 974)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 3174)
+Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.2ms | Allocations: 3878)
+
+
+Started PATCH "/my_threads/4" for ::1 at 2022-09-03 13:46:16 +0900
+Processing by MyThreadsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Update My thread", "id"=>"4"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+Redirected to http://localhost:3000/my_threads/4
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 1028)
+
+
+Started GET "/my_threads/4" for ::1 at 2022-09-03 13:46:16 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2775)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 3484)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:46:19 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 852)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 3061)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 3326)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-03 13:46:20 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 2.6ms | Allocations: 778)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 875)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3083)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3348)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-03 13:46:25 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"task1"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.7ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "task1"], ["created_at", "2022-09-03 04:46:25.332186"], ["updated_at", "2022-09-03 04:46:25.332186"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/5
+Completed 302 Found in 10ms (ActiveRecord: 1.7ms | Allocations: 2023)
+
+
+Started GET "/my_threads/5" for ::1 at 2022-09-03 13:46:25 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 575)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 2775)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.2ms | Allocations: 3482)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:46:31 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.2ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 985)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 3194)
+Completed 200 OK in 13ms (Views: 11.1ms | ActiveRecord: 0.2ms | Allocations: 3459)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-03 13:46:35 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 2.6ms | Allocations: 782)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 879)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3087)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3352)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-03 13:46:40 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"task2"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.0ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "task2"], ["created_at", "2022-09-03 04:46:40.617172"], ["updated_at", "2022-09-03 04:46:40.617172"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/6
+Completed 302 Found in 30ms (ActiveRecord: 2.5ms | Allocations: 2017)
+
+
+Started GET "/my_threads/6" for ::1 at 2022-09-03 13:46:40 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.1ms | Allocations: 569)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2769)
+Completed 200 OK in 11ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 3476)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-03 13:46:41 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 1117)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3326)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.3ms | Allocations: 3592)
+
+
+Started GET "/" for ::1 at 2022-09-04 23:52:49 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.4ms | Allocations: 181)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 6071)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 40709)
+Completed 200 OK in 44ms (Views: 36.4ms | ActiveRecord: 0.5ms | Allocations: 46039)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-07 10:29:18 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 6.6ms | Allocations: 3218)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 7.7ms | Allocations: 3738)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 38484)
+Completed 200 OK in 43ms (Views: 34.5ms | ActiveRecord: 0.3ms | Allocations: 47722)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-07 10:29:22 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.9ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ssss"], ["created_at", "2022-09-07 01:29:22.774335"], ["updated_at", "2022-09-07 01:29:22.774335"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/7
+Completed 302 Found in 11ms (ActiveRecord: 1.5ms | Allocations: 3800)
+
+
+Started GET "/my_threads/7" for ::1 at 2022-09-07 10:29:22 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1408)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 3618)
+Completed 200 OK in 9ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 8179)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-07 10:29:28 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.8ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ssss"], ["created_at", "2022-09-07 01:29:28.741110"], ["updated_at", "2022-09-07 01:29:28.741110"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/8
+Completed 302 Found in 11ms (ActiveRecord: 2.1ms | Allocations: 2185)
+
+
+Started GET "/my_threads/8" for ::1 at 2022-09-07 10:29:28 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"8"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 707)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2909)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 3620)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-07 10:29:31 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.8ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ssss"], ["created_at", "2022-09-07 01:29:31.929087"], ["updated_at", "2022-09-07 01:29:31.929087"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/9
+Completed 302 Found in 11ms (ActiveRecord: 1.8ms | Allocations: 2163)
+
+
+Started GET "/my_threads/9" for ::1 at 2022-09-07 10:29:31 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"9"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 708)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 2908)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms | Allocations: 3615)
+
+
+Started GET "/my_threads/9/edit" for ::1 at 2022-09-07 10:29:36 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 3.8ms | Allocations: 1014)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1325)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 3535)
+Completed 200 OK in 15ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 4308)
+
+
+Started PATCH "/my_threads/9" for ::1 at 2022-09-07 10:29:38 +0900
+Processing by MyThreadsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Update My thread", "id"=>"9"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+Redirected to http://localhost:3000/my_threads/9
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms | Allocations: 1201)
+
+
+Started GET "/my_threads/9" for ::1 at 2022-09-07 10:29:38 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"9"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 730)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2931)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.2ms | Allocations: 3642)
+
+
+Started DELETE "/my_threads/9" for ::1 at 2022-09-07 10:29:39 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"9"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (1.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 13ms (ActiveRecord: 3.0ms | Allocations: 2366)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-07 10:29:39 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1811)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4030)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 4378)
+
+
+Started GET "/my_threads/4" for ::1 at 2022-09-07 10:29:42 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.4ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2891)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 3596)
+
+
+Started GET "/my_threads/4" for ::1 at 2022-09-07 10:29:49 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.4ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.3ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 679)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2879)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 3583)
+
+
+Started GET "/my_threads/4/edit" for ::1 at 2022-09-07 10:29:51 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 3.3ms | Allocations: 973)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1105)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 3305)
+Completed 200 OK in 13ms (Views: 10.8ms | ActiveRecord: 0.2ms | Allocations: 4009)
+
+
+Started PATCH "/my_threads/4" for ::1 at 2022-09-07 10:29:59 +0900
+Processing by MyThreadsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssss"}, "commit"=>"Update My thread", "id"=>"4"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+Redirected to http://localhost:3000/my_threads/4
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 1163)
+
+
+Started GET "/my_threads/4" for ::1 at 2022-09-07 10:29:59 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"4"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 716)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 2916)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 3625)
+
+
+Started DELETE "/my_threads/4" for ::1 at 2022-09-07 10:30:01 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.2ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 7ms (ActiveRecord: 2.1ms | Allocations: 2335)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-07 10:30:01 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 1404)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 3629)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.2ms | Allocations: 3898)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-07 10:30:03 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 2.8ms | Allocations: 909)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1006)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 3214)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3479)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-07 10:30:11 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ssssssss"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.4ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ssssssss"], ["created_at", "2022-09-07 01:30:11.820345"], ["updated_at", "2022-09-07 01:30:11.820345"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/10
+Completed 302 Found in 10ms (ActiveRecord: 1.1ms | Allocations: 2159)
+
+
+Started GET "/my_threads/10" for ::1 at 2022-09-07 10:30:11 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"10"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 720)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2920)
+Completed 200 OK in 10ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3627)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-08 00:21:46 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 6.7ms | Allocations: 3065)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3585)
+  Rendered layout layouts/application.html.erb (Duration: 32.0ms | Allocations: 38333)
+Completed 200 OK in 50ms (Views: 34.3ms | ActiveRecord: 0.4ms | Allocations: 47573)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-08 00:21:49 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"fffff"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.6ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fffff"], ["created_at", "2022-09-07 15:21:49.140510"], ["updated_at", "2022-09-07 15:21:49.140510"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/11
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms | Allocations: 3729)
+
+
+Started GET "/my_threads/11" for ::1 at 2022-09-08 00:21:49 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"11"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.7ms | Allocations: 175)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1340)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 3550)
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 0.3ms | Allocations: 8111)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-08 00:21:58 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ffffffffff"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.0ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ffffffffff"], ["created_at", "2022-09-07 15:21:58.816905"], ["updated_at", "2022-09-07 15:21:58.816905"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/12
+Completed 302 Found in 14ms (ActiveRecord: 2.3ms | Allocations: 2113)
+
+
+Started GET "/my_threads/12" for ::1 at 2022-09-08 00:21:58 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 627)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 2829)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.1ms | Allocations: 3540)
+
+
+Started GET "/my_threads/12/edit" for ::1 at 2022-09-08 00:22:06 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 2.6ms | Allocations: 930)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 3455)
+Completed 200 OK in 13ms (Views: 9.9ms | ActiveRecord: 0.2ms | Allocations: 4229)
+
+
+Started PATCH "/my_threads/12" for ::1 at 2022-09-08 00:22:07 +0900
+Processing by MyThreadsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"ffffffffff"}, "commit"=>"Update My thread", "id"=>"12"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+Redirected to http://localhost:3000/my_threads/12
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms | Allocations: 1113)
+
+
+Started GET "/my_threads/12" for ::1 at 2022-09-08 00:22:08 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 642)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2842)
+Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.2ms | Allocations: 3552)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:10 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.4ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 1992)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 4212)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.4ms | Allocations: 4565)
+
+
+Started GET "/my_threads/7" for ::1 at 2022-09-08 00:22:16 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2815)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.2ms | Allocations: 3520)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:19 +0900
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 1726)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 3935)
+Completed 200 OK in 15ms (Views: 13.5ms | ActiveRecord: 0.2ms | Allocations: 4201)
+
+
+Started GET "/my_threads/5" for ::1 at 2022-09-08 00:22:20 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2813)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 3517)
+
+
+Started GET "/my_threads/5/edit" for ::1 at 2022-09-08 00:22:22 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 3.0ms | Allocations: 913)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1045)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3245)
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 0.2ms | Allocations: 3949)
+
+
+Started GET "/my_threads/5" for ::1 at 2022-09-08 00:22:24 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2815)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 3519)
+
+
+Started DELETE "/my_threads/5" for ::1 at 2022-09-08 00:22:26 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (1.5ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 13ms (ActiveRecord: 3.5ms | Allocations: 2298)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:26 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1590)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3799)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 4067)
+
+
+Started GET "/my_threads/6" for ::1 at 2022-09-08 00:22:27 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 609)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2809)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 3513)
+
+
+Started DELETE "/my_threads/6" for ::1 at 2022-09-08 00:22:29 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 12ms (ActiveRecord: 2.2ms | Allocations: 2279)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:29 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1468)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3693)
+Completed 200 OK in 16ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 3964)
+
+
+Started GET "/my_threads/7" for ::1 at 2022-09-08 00:22:30 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2821)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 3526)
+
+
+Started DELETE "/my_threads/7" for ::1 at 2022-09-08 00:22:32 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"7"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 11ms (ActiveRecord: 2.4ms | Allocations: 2272)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:32 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1334)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 3547)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.2ms | Allocations: 3815)
+
+
+Started GET "/my_threads/8" for ::1 at 2022-09-08 00:22:33 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 617)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2821)
+Completed 200 OK in 11ms (Views: 8.7ms | ActiveRecord: 0.2ms | Allocations: 3525)
+
+
+Started DELETE "/my_threads/8" for ::1 at 2022-09-08 00:22:34 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"8"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 11ms (ActiveRecord: 2.7ms | Allocations: 2269)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:34 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1206)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 3415)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 3683)
+
+
+Started GET "/my_threads/10" for ::1 at 2022-09-08 00:22:46 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 615)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2818)
+Completed 200 OK in 12ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 3522)
+
+
+Started DELETE "/my_threads/10" for ::1 at 2022-09-08 00:22:48 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"10"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.8ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 11ms (ActiveRecord: 2.5ms | Allocations: 2278)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:48 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1071)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3280)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.2ms | Allocations: 3548)
+
+
+Started GET "/my_threads/11" for ::1 at 2022-09-08 00:22:49 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 613)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2813)
+Completed 200 OK in 10ms (Views: 7.4ms | ActiveRecord: 0.2ms | Allocations: 3517)
+
+
+Started DELETE "/my_threads/11" for ::1 at 2022-09-08 00:22:50 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"11"}
+  [1m[36mMyThread Load (0.4ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.5ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 27ms (ActiveRecord: 2.1ms | Allocations: 2273)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 00:22:50 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 942)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 3151)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 3419)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-08 00:23:04 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 6.0ms | Allocations: 841)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 938)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 3146)
+Completed 200 OK in 18ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-08 00:23:21 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"rf4f4fr4f4rf"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (0.7ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "rf4f4fr4f4rf"], ["created_at", "2022-09-07 15:23:21.085499"], ["updated_at", "2022-09-07 15:23:21.085499"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/13
+Completed 302 Found in 15ms (ActiveRecord: 2.2ms | Allocations: 2088)
+
+
+Started GET "/my_threads/13" for ::1 at 2022-09-08 00:23:21 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"13"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 635)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2835)
+Completed 200 OK in 10ms (Views: 7.8ms | ActiveRecord: 0.1ms | Allocations: 3542)
+
+
+Started GET "/" for ::1 at 2022-09-08 09:01:21 +0900
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.4ms | Allocations: 181)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 6013)
+  Rendered layout layouts/application.html.erb (Duration: 45.9ms | Allocations: 40688)
+Completed 200 OK in 53ms (Views: 47.2ms | ActiveRecord: 0.6ms | Allocations: 46018)
+
+
+Started GET "/my_threads/new" for ::1 at 2022-09-08 09:01:23 +0900
+Processing by MyThreadsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/new.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 6.1ms | Allocations: 3082)
+  Rendered my_threads/new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3399)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 5618)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 5957)
+
+
+Started POST "/my_threads" for ::1 at 2022-09-08 09:01:25 +0900
+Processing by MyThreadsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>"cefc"}, "commit"=>"Create My thread"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mMyThread Create (1.8ms)[0m  [1m[32mINSERT INTO "my_threads" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "cefc"], ["created_at", "2022-09-08 00:01:25.521763"], ["updated_at", "2022-09-08 00:01:25.521763"]]
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:27:in `block in create'
+Redirected to http://localhost:3000/my_threads/14
+Completed 302 Found in 13ms (ActiveRecord: 2.9ms | Allocations: 3727)
+
+
+Started GET "/my_threads/14" for ::1 at 2022-09-08 09:01:25 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"14"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 903)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3113)
+Completed 200 OK in 12ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 7639)
+
+
+Started GET "/" for ::1 at 2022-09-08 20:00:15 +0900
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MyThreadsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.4ms | Allocations: 181)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 6115)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 40847)
+Completed 200 OK in 51ms (Views: 38.8ms | ActiveRecord: 0.5ms | Allocations: 46179)
+
+
+Started GET "/my_threads/12" for ::1 at 2022-09-08 20:00:18 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.5ms | Allocations: 825)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 3036)
+Completed 200 OK in 17ms (Views: 7.0ms | ActiveRecord: 0.3ms | Allocations: 7641)
+
+
+Started GET "/my_threads/12/edit" for ::1 at 2022-09-08 20:00:20 +0900
+Processing by MyThreadsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/edit.html.erb within layouts/application
+  Rendered my_threads/_form.html.erb (Duration: 13.7ms | Allocations: 3113)
+  Rendered my_threads/edit.html.erb within layouts/application (Duration: 16.1ms | Allocations: 3481)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 5692)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.3ms | Allocations: 6467)
+
+
+Started PATCH "/my_threads/12" for ::1 at 2022-09-08 20:00:23 +0900
+Processing by MyThreadsController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "my_thread"=>{"title"=>""}, "commit"=>"Update My thread", "id"=>"12"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:40:in `block in update'
+  [1m[36mMyThread Update (0.9ms)[0m  [1m[33mUPDATE "my_threads" SET "title" = ?, "updated_at" = ? WHERE "my_threads"."id" = ?[0m  [["title", ""], ["updated_at", "2022-09-08 11:00:23.325470"], ["id", 12]]
+  ↳ app/controllers/my_threads_controller.rb:40:in `block in update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:40:in `block in update'
+Redirected to http://localhost:3000/my_threads/12
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms | Allocations: 4130)
+
+
+Started GET "/my_threads/12" for ::1 at 2022-09-08 20:00:23 +0900
+Processing by MyThreadsController#show as TURBO_STREAM
+  Parameters: {"id"=>"12"}
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 676)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2878)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 3634)
+
+
+Started DELETE "/my_threads/12" for ::1 at 2022-09-08 20:00:25 +0900
+Processing by MyThreadsController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"12"}
+  [1m[36mMyThread Load (0.3ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mMyThread Destroy (0.6ms)[0m  [1m[31mDELETE FROM "my_threads" WHERE "my_threads"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/my_threads_controller.rb:52:in `destroy'
+Redirected to http://localhost:3000/my_threads
+Completed 302 Found in 11ms (ActiveRecord: 2.0ms | Allocations: 2289)
+
+
+Started GET "/my_threads" for ::1 at 2022-09-08 20:00:25 +0900
+Processing by MyThreadsController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/index.html.erb within layouts/application
+  [1m[36mMyThread Load (0.1ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads"[0m
+  ↳ app/views/my_threads/index.html.erb:6
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered my_threads/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1058)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 3269)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms | Allocations: 3539)
+
+
+Started GET "/my_threads/13" for ::1 at 2022-09-08 20:00:27 +0900
+Processing by MyThreadsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mMyThread Load (0.2ms)[0m  [1m[34mSELECT "my_threads".* FROM "my_threads" WHERE "my_threads"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/my_threads_controller.rb:63:in `set_my_thread'
+  Rendering layout layouts/application.html.erb
+  Rendering my_threads/show.html.erb within layouts/application
+  Rendered my_threads/_my_thread.html.erb (Duration: 0.2ms | Allocations: 21)
+  Rendered my_threads/show.html.erb within layouts/application (Duration: 2.6ms | Allocations: 587)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2787)
+Completed 200 OK in 14ms (Views: 11.2ms | ActiveRecord: 0.2ms | Allocations: 3491)
+
+
